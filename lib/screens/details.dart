@@ -6,7 +6,7 @@ import 'package:lipsum/lipsum.dart' as lipsum;
 class Details extends StatelessWidget {
 
   final Trip trip;
-  Details({ @required this.trip });
+  const Details({ @required this.trip });
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +21,14 @@ class Details extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             ClipRRect(
-              child: Image.asset(
-                'images/${trip.img}',
-                height: 360,
-                fit: BoxFit.cover,
-                alignment: Alignment.topCenter,
+              child: Hero(
+                tag: 'location-img-${trip.img}',
+                child: Image.asset(
+                  'images/${trip.img}',
+                  height: 360,
+                  fit: BoxFit.cover,
+                  alignment: Alignment.topCenter,
+                ),
               )
             ),
             SizedBox(height: 30),

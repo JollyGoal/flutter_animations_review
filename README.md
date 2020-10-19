@@ -1,16 +1,25 @@
-# flutter_animations_review
+# Travel App
 
-A new Flutter application.
+A small [Flutter](https://flutter.dev/) application for practicing and reviewing animation principles in flutter.
+The whole app is filled with dummy data and not do not need any network connection.
 
-## Getting Started
+[Download APK](release/travel-app.apk)
 
-This project is a starting point for a Flutter application.
+## External Packages
+```
+dependencies:
+  lipsum: ^1.0.1  # Creates dummy text
+  flutter_launcher_icons: ^0.8.1
+  flutter_launcher_name: ^0.0.1
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Demo GIF
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![gif](release/demo.gif)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+|Home Screen|Booking Screen|
+|---|---|
+|![main](release/scr2.jpg)|![result](release/scr1.jpg)|
+
